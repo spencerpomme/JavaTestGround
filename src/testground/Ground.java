@@ -24,6 +24,7 @@ public class Ground {
 		
 		// lambda expressions must be assigned to a functional interface: functional interface is a type.
 		IntFunction<Integer> x = (int a) -> a + 2;
+		System.out.println("Another test: " + x.apply(10));
 		
 	}
 	

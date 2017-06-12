@@ -14,5 +14,5 @@ public interface FunctionWrapper<T, U> {
 	 * @param t is of type T
 	 * @return a type U object
 	 */
-	public U function(T t);
+	U function(T t);
 }
