@@ -37,5 +37,12 @@ public class Ground {
 		U res = func.function(arg);
 		System.out.println("[2] The result is " + res + ".");
 	}
+	
+	public static int arbitraySum(int... nums) {
+	    int res = 0;
+	    for (int num: nums)
+	        res += num;
+	    return res;
+	}
 
 }
