@@ -45,7 +45,7 @@ class TalkingClock {
 	public class TimePrinter implements ActionListener {
 		public void actionPerformed(ActionEvent event) {
 			System.out.println("At the tone, the time is " + new Date());
-			if (beep) Toolkit.getDefaultToolkit().beep();
+			if (TalkingClock.this.beep) Toolkit.getDefaultToolkit().beep(); // can write as simple as: if (beep) {...}
 		}
 	}
 }
