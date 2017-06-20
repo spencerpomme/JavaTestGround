@@ -14,7 +14,7 @@ public class Ground {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		
 		TestMethods newtest = new TestMethods();
 		Ground.callTestMethod(newtest::methodTwo, 3);
 		Ground.callTestMethod(newtest::methodThree, true);
@@ -25,6 +25,7 @@ public class Ground {
 		// lambda expressions must be assigned to a functional interface: functional interface is a type.
 		IntFunction<Integer> x = (int a) -> a + 2;
 		System.out.println("Another test: " + x.apply(10));
+		
 		
 	}
 	
