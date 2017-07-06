@@ -4,6 +4,8 @@
 package testground;
 import java.util.function.Function;
 import java.util.function.IntFunction;
+import java.util.ArrayList;
+import java.util.List;
 /**
  * @author zhangpingcheng
  *
@@ -26,6 +28,19 @@ public class Ground {
 		IntFunction<Integer> x = (int a) -> a + 2;
 		System.out.println("Another test: " + x.apply(10));
 		
+		// wildcard test below:
+		Manager m1 = new Manager("m1", 100, 2001, 1, 1);
+		Manager m2 = new Manager("m2", 200, 2008, 1, 1);
+		Manager m3 = new Manager("m3", 450, 2018, 1, 1);
+		m1.setBonus(100);
+		m2.setBonus(200);
+		m3.setBonus(500);
+		Manager[] mlist = {m1, m2, m3};
+		
+		Pair<Manager> res = new Pair<>();
+		Ground.mimaxBonus(mlist, res);
+		
+		System.out.print(res.getFirst() + " " + res.getSecond());
 		
 	}
 	
