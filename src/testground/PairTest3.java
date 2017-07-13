@@ -13,9 +13,9 @@ public class PairTest3 {
 
         Pair<Employee> result = new Pair<>();
         minmaxBonus(managers, result);
-
         System.out.println("first: " + result.getFirst().getName() + ", second: " + result.getSecond().getName());
-        minmaxBonus(managers, result);
+        
+        maxminBonus(managers, result);
         System.out.println("first: " + result.getFirst().getName() + ", second: " + result.getSecond().getName());
     }
 
